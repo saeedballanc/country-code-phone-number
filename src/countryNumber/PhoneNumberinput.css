@@ -1,0 +1,218 @@
+
+body{
+    background-color: #252525;
+    overflow: hidden;
+}
+
+.b{
+    animation: animate1 1.2s linear;
+    animation-timing-function:cubic-bezier(0.175, .885, .32, 1.159);
+}
+.d{
+    animation: animate2 1s linear;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.159);
+}
+
+@keyframes animate1{
+    0%{
+
+        height: 0rem;
+    }
+    50%{
+
+        height: 24rem;
+    }
+    100%{
+
+        height: 20rem;
+    }
+}
+
+@keyframes animate2{
+    0%{
+
+        height: 20rem;
+    }
+    100%{
+
+        height: 0rem;
+    }
+}
+
+.phoneNumberContainer{
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 60px;
+    margin-left: 320px;
+}
+
+.phoneInputBox{
+    position: relative;
+    top: 20px;
+    width: 392px;
+    height: 85px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+
+.flagImg{
+    width: 1.5rem;
+}
+
+.flagContainer{
+    width: 3.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 0 0.2rem;
+    cursor: pointer;
+    border-right: 1px solid rgb(229, 229, 229);
+}
+
+.countrySearch{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    margin: 0 1rem;
+    grid-gap: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 340px;
+}
+
+.countrySearch > input{
+    width: 100%;
+    font: inherit;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+}
+.countrySearch > input:focus{
+    outline: none;
+}
+.inputBoxContainer{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+}
+.inputBoxContainer > p{
+    font-size: 0.8rem;
+}
+.inputNumber>span{
+    font-size: 0.9rem;
+}
+.inputNumber > input{
+    font: inherit;
+    font-size: 0.9rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 5px
+}
+.inputNumber > input:focus{
+    outline: none;
+}
+.inputNumber input::-webkit-outer-spin-button,
+.inputNumber input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.flagDropDownBox{
+    height: 20rem;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.flagDropDownBox::-webkit-scrollbar {
+    display: none;
+}
+.flagList{
+    grid-gap: 3px;
+    padding: 0.5rem;
+    margin-top: 50px;
+}
+
+.flag{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.flag>img{
+    width: 2rem;
+}
+.flagNames{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.flagNames>span{
+    color: grey;
+    font-size: 0.9rem;
+}
+.flagName{
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.flag:hover, .flagActive{
+    background-color: #F3F5F9;
+}
+
+.flagActive .flagName{
+    font-weight: 500;
+}
+.flag:hover .flagName{
+    font-weight: 500;
+}
+
+
+
+
+.jeliBase{
+
+    animation: jeliBase 1s ease-out;
+}
+
+
+
+@keyframes jeliBase{
+
+    0%{
+
+        height: 85px;
+        background-color: rgb(255, 255, 255);
+    }
+    28%{
+
+        background-color: rgb(255, 255, 255);
+    }
+    80%{
+
+        height: 78px;
+        background-color: rgb(255, 236, 233);
+    }
+    100%{
+
+        height: 85px;
+        background-color: rgb(255, 255, 255);
+    }
+}
